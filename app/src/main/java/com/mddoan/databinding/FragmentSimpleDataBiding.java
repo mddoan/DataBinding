@@ -40,7 +40,7 @@ public class FragmentSimpleDataBiding extends Fragment{
          */
         FragSimpleBinding binding = DataBindingUtil.inflate(inflater, R.layout
                 .frag_simple, container, false);
-        User user = new User("");
+        User user = new User(null);
         user.setUserName(name);
         binding.setUser(user);
         View root = binding.getRoot();
